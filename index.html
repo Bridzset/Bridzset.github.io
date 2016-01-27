@@ -171,7 +171,6 @@ email source code?</strong></p>
 <p style="padding-left:2%; padding-top:2%;"><strong>How can you track whether an HTML mail has been opened?</strong></p>
 
  <p style="padding-left:2%;"> Answer: </p>
-
  <p style="color:#04B4AE;padding-left:2%;padding-right:3%;text-align:justify";>The best way is to use Google Analytics Event Tracking function. 
  Just embedding an image tag within the HTML of the email. 
  The URL of the image contains all the information necessary for Google Analytics to understand.
@@ -239,17 +238,24 @@ email source code?</strong></p>
  
 <p style="color:#04B4AE;padding-left:2%;">Version: MYSQL 5.6 </p>
  
- &nbsp;
- </td>
+&nbsp;
+</td>
 </tr>
 <tr>
 <td style=" background-color:white;">
 
 <p style="padding-left:2%; padding-top:2%;"><strong>Write an Excel expression which extracts the country domain from the following URL: http://disney.de</strong></p>
 
-<p style="color:#04B4AE;padding-left:2%;"> =UrlProperty(http://disney.de,"tld")    -    using SEOTools for Excel Add-in</p>
- &nbsp;
- </td>
+<p style="color:#04B4AE;padding-left:2%;padding-right:3%"> 
+
+
+=RIGHT(http://disney.de,LEN(http://disney.de)-FIND("*",SUBSTITUTE(http://disney.de,".","*",LEN(http://disney.de)-LEN(SUBSTITUTE(http://disney.de,".","")))))
+&nbsp;
+or
+&nbsp;
+=UrlProperty(http://disney.de,"tld")    -    using SEOTools for Excel Add-in</p>
+&nbsp;
+</td>
 </tr>
 <tr>
 <td style=" background-color:white;">
@@ -265,8 +271,8 @@ email source code?</strong></p>
  </ul>
 
 <p style="color:#04B4AE;padding-left:2%;"> Order:  Page Views > Page Visits > Unique Visitors </p>
- &nbsp;
- </td>
+&nbsp;
+</td>
 </tr>
 <tr>
 <td style=" background-color:white;">
@@ -279,8 +285,8 @@ email source code?</strong></p>
  <li style="padding-right:3%;text-align:justify";> Status 301 means that the page is moved permanently to a new location. The client/browser should not attempt to request the original location but use the new location anymore.</li>
  <li style="padding-right:3%;text-align:justify";>Status 302 means that the resource is temporarily located somewhere else, and the client/browser should continue requesting the original url </li>
  </ul>
- &nbsp;
- </td>
+&nbsp;
+</td>
 </tr>
 <tr>
 <td style=" background-color:white;">
@@ -289,21 +295,19 @@ email source code?</strong></p>
  
 <p style="padding-left:2%;"> Answer: </p>
 <p style="color:#04B4AE;padding-left:2%;"> Cloud computing : Because I can reach, share and backup all my stuff anytime anywhere.</p>
- &nbsp;
- </td>
+&nbsp;
+</td>
 </tr>
 <tr>
 <td style=" background-color:white;">
  
 <p style="padding-left:2%; padding-top:2%;"><strong>Do you want to hear a TCP joke?</strong></p>
-
 <p style="padding-left:2%;"> Answer: </p>
 <p style="color:#04B4AE;padding-left:2%;">Sure, I also know a UDP joke, but you might not get it :)</p>
- &nbsp;
+&nbsp;
 
-
-</td></tr>
+</td>
+</tr>
 </table>
-
 </body>
 </html>
